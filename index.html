@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Result Viewer</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+text-align:center;
+background:#f2f2f2;
+}
+
+h2{
+margin-top:40px;
+}
+
+select{
+padding:10px;
+font-size:16px;
+}
+</style>
+
+<script>
+
+function showPDF(){
+    var pdf=document.getElementById("student").value;
+
+    if(pdf!=""){
+        window.location.href = pdf;
+    }
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>Select Your Name to View Result</h2>
+
+<select id="student" onchange="showPDF()">
+<option value="">-- Select Name --</option>
+
+<option value="Kowshiek Internship.pdf">Kowshiek</option>
+<option value="student2.pdf">Pavisri</option>
+<option value="student3.pdf">Charan</option>
+<option value="student4.pdf">Dinesh</option>
+<option value="student5.pdf">Elango</option>
+<option value="student6.pdf">Fazil</option>
+<option value="student7.pdf">Gokul</option>
+<option value="student8.pdf">Hari</option>
+<option value="student9.pdf">Irfan</option>
+<option value="student10.pdf">Jagan</option>
+
+</select>
+
+</body>
+</html>
